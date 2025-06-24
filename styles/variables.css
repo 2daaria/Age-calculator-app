@@ -1,0 +1,22 @@
+:root {
+	--color-light: #ffffff;
+	--color-dark: #000000;
+	--color-gray500: #716F6F;
+	--color-gray200: #DCDCDC;
+	--color-gray100: #F0F0F0;
+	--color-red: #FF5959;
+	--color-purple: #854DFF;
+	
+	--container-width: 840px;
+	--margin-inline-mob: 16px;
+	--margin-inline-tab: 41px;
+	--padding-inline-mob: 24px;
+	--padding-block-mob: 48px;
+	--padding-tab-full: 56px;
+	
+	--input-height-mob: 46px;
+	--input-height-tab-full: 64px;
+	
+	--border-radius: 8px;
+	
+}
