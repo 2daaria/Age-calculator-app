@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<link rel="stylesheet" href="styles/styles.css">
+	
+	<title>Age calculator app</title>
+</head>
+
+<body>
+	
+	<main>
+		<div class="container">
+			
+			<form class="calc-form" action="#" autocomplete="off" novalidate>
+				<div class="inputs-wrapper">
+					<div class="data-field">
+						<label for="day" class="label">Day</label>
+						<input type="text" id="day" class="day input-item" placeholder="DD" maxlength="2" inputmode="numeric">
+					</div>
+					
+					<div class="data-field">
+						<label for="month" class="label">Month</label>
+						<input type="text" id="month" class="month input-item" placeholder="MM" maxlength="2" inputmode="numeric">
+					</div>
+					
+					<div class="data-field">
+						<label for="year" class="label">Year</label>
+						<input type="text" id="year" class="year input-item" placeholder="YYYY" maxlength="4" inputmode="numeric">
+					</div>
+				</div>
+				
+				<div class="buttons-wrapper">
+					<button type="submit" id="calc-btn" class="calc-button" aria-label="calculate age">
+						<img
+							src="/images/icon-arrow.svg"
+							alt="calculator icon"
+						>
+					</button>
+				</div>
+			</form>
+			
+			
+			<div class="output-wrapper">
+				<div class="output-item">
+					<div class="result" id="years-output" aria-live="polite">--</div>
+					<div class="result-heading">years</div>
+				</div>
+				
+				<div class="output-item">
+					<div class="result" id="months-output" aria-live="polite">--</div>
+					<div class="result-heading">month</div>
+				</div>
+				
+				<div class="output-item">
+					<div class="result" id="days-output" aria-live="polite">--</div>
+					<div class="result-heading">days</div>
+				</div>
+			</div>
+		</div>
+	</main>
+	
+	<footer class="footer">
+	
+	</footer>
+	
+	<script src="index.js"></script>
+</body>
+</html>
