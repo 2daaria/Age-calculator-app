@@ -5,7 +5,10 @@
 body {
 	background-color: var(--color-gray100);
 	font-family: Poppins, sans-serif;
-	height: 100dvh;
+	min-height: 100dvh;
+	height: auto;
+	padding-top: 165px;
+	padding-bottom: 165px;
 }
 
 .label,
@@ -15,14 +18,11 @@ body {
 	font-family: inherit;
 }
 
-
 .container {
 	background-color: var(--color-light);
 	margin-inline: var(--margin-inline-mob);
 	padding-inline: var(--padding-inline-mob);
 	padding-block: var(--padding-block-mob);
-	margin-top: 165px;
-	margin-bottom: 165px;
 	border-radius: 24px 24px 100px 24px;
 }
 
@@ -66,6 +66,14 @@ body {
 	color: var(--color-dark);
 }
 
+.input-error {
+	border: 1px solid var(--color-red);
+}
+
+.label-error {
+	color: var(--color-red);
+}
+
 .input-item::placeholder {
 	font-weight: 800;
 	font-size: 20px;
@@ -102,6 +110,15 @@ body {
 	margin: 0 auto;
 	z-index: 10;
 	position: relative;
+	transition: 0.2s;
+}
+
+.calc-button:hover {
+	background-color: #6837d9
+}
+
+.calc-button:active {
+	background-color: var(--color-dark);
 }
 
 .calc-button img {
@@ -128,12 +145,26 @@ body {
 	color: var(--color-purple);
 }
 
+.error-message {
+	color: var(--color-red);
+	font-style: italic;
+	font-size: 14px;
+	line-height: 150%;
+	margin-top: 0;
+}
+
+.error-message:not(:empty) {
+    margin-top: 8px;
+}
+
 @media (min-width: 768px) {
+	body {
+		padding-top: 126px;
+		padding-bottom: 126px;
+	}
 	.container {
 		margin-inline: var(--margin-inline-tab);
 		padding: 56px;
-		margin-top: 126px;
-		margin-bottom: 126px;
 		border-radius: 24px 24px 200px 24px;
 	}
 	
@@ -174,10 +205,12 @@ body {
 }
 
 @media (min-width: 992px) {
+	body {
+		padding-top: 158px;
+		padding-bottom: 158px;
+	}
 	.container {
 		max-width: 840px;
-		margin-top: 158px;
-		margin-bottom: 158px;
 		margin-inline: auto;
 	}
 	
