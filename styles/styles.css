@@ -157,6 +157,16 @@ body {
     margin-top: 8px;
 }
 
+.attribution {
+	text-align: center;
+	padding-top: 20px;
+	font-size: 12px;
+}
+
+.attribution a {
+	color: var(--color-purple);
+}
+
 @media (min-width: 768px) {
 	body {
 		padding-top: 126px;
