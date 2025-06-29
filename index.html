@@ -13,22 +13,24 @@
 	
 	<main>
 		<div class="container">
-			
 			<form class="calc-form" action="#" autocomplete="off" novalidate>
 				<div class="inputs-wrapper">
 					<div class="data-field">
-						<label for="day" class="label">Day</label>
+						<label for="day" class="label" id="day-label">Day</label>
 						<input type="text" id="day" class="day input-item" placeholder="DD" maxlength="2" inputmode="numeric">
+						<div class="error-message" id="day-error"></div>
 					</div>
 					
 					<div class="data-field">
-						<label for="month" class="label">Month</label>
+						<label for="month" class="label" id="month-label">Month</label>
 						<input type="text" id="month" class="month input-item" placeholder="MM" maxlength="2" inputmode="numeric">
+						<div class="error-message" id="month-error"></div>
 					</div>
 					
 					<div class="data-field">
-						<label for="year" class="label">Year</label>
+						<label for="year" class="label" id="year-label">Year</label>
 						<input type="text" id="year" class="year input-item" placeholder="YYYY" maxlength="4" inputmode="numeric">
+						<div class="error-message" id="year-error"></div>
 					</div>
 				</div>
 				
@@ -36,7 +38,7 @@
 					<button type="submit" id="calc-btn" class="calc-button" aria-label="calculate age">
 						<img
 							src="images/icon-arrow.svg"
-							alt="calculator icon"
+							alt=""
 						>
 					</button>
 				</div>
